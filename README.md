@@ -1,4 +1,4 @@
-# Github Plugin
+# Github Plugin hello
 
 [![codecov](https://codecov.io/gh/jenkinsci/github-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/jenkinsci/github-plugin)
 [![License](https://img.shields.io/github/license/jenkinsci/github-plugin.svg)](LICENSE)
@@ -93,7 +93,7 @@ scope.
 GitHub Enterprise
 
 You can also redefine GitHub url by clicking on **Custom GitHub API
-URL** checkbox.  
+URL** checkbox.
 Note that credentials are filtered by entered GH url with help of domain
 requirements. So you can create credentials in different domains and see
 only credentials that matched by predefined domains.
@@ -140,7 +140,7 @@ things:
     class names
     -   `com.cloudbees.jenkins.GitHubPushTrigger`
     -   `org.jenkinsci.plugins.github.webhook.WebhookManager`
-    -   `com.cloudbees.jenkins.GitHubWebHook`  
+    -   `com.cloudbees.jenkins.GitHubWebHook`
         and you'll see the log of Jenkins trying to install a
         post-receive hook.
 -   Click "Test hook" button from the GitHub UI and see if Jenkins
@@ -251,7 +251,7 @@ Start the local Jenkins instance:
 ## Jenkins Plugin Maven goals
 
 	hpi:create  Creates a skeleton of a new plugin.
-	
+
 	hpi:hpi Builds the .hpi file
 
 	hpi:hpl Generates the .hpl file
@@ -259,21 +259,21 @@ Start the local Jenkins instance:
 	hpi:run Runs Jenkins with the current plugin project
 
 	hpi:upload Posts the hpi file to java.net. Used during the release.
-	
-	
+
+
 ## How to install
 
-Run 
+Run
 
 	mvn hpi:hpi
-	
+
 to create the plugin .hpi file.
 
 
 To install:
 
 1. copy the resulting ./target/rdoc.hpi file to the $JENKINS_HOME/plugins directory. Don't forget to restart Jenkins afterwards.
-	
+
 2. or use the plugin management console (https://example.com:8080/pluginManager/advanced) to upload the hpi file. You have to restart Jenkins in order to find the plugin in the installed plugins list.
 
 
